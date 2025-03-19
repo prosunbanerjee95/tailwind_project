@@ -22,12 +22,23 @@ function Home() {
                     </div>
                 </Link>
 
-                <div className="max-w-md w-full h-fit bg-white border border-gray-200 rounded-lg shadow-sm hover:dark:bg-gray-800 hover:dark:border-gray-100 flex flex-col items-center p-6">
+                {/* <div className="max-w-md w-full h-fit bg-white border border-gray-200 rounded-lg shadow-sm hover:dark:bg-gray-800 hover:dark:border-gray-100 flex flex-col items-center p-6">
+                    <Link to="/maincontentarea">
+                        <div className="flex justify-center items-center overflow-hidden w-full">
+                            <img className="w-full max-w-3xl max-h-11 object-cover rounded-t-lg" src={Image} alt="product image" />
+                        </div>
+                        <h1 className="text-2xl font-semibold text-purple-600 mt-2">Dashboard</h1>
+                        <p className="text-gray-600 text-center px-4">This is the main content area.</p>
+                    </Link>
+                </div> */}
+                <div className="max-w-md w-full h-fit bg-white border border-gray-200 rounded-lg shadow-sm dark:hover:bg-gray-800 dark:hover:border-gray-100 flex flex-col items-center p-6">
+                <Link to="/maincontentarea" className="w-full text-center">
                     <div className="flex justify-center items-center overflow-hidden w-full">
-                        <img className="w-full max-w-3xl max-h-11 object-cover rounded-t-lg" src={Image} alt="product image" />
+                        <img className="w-full max-w-3xl max-h-40 object-cover rounded-t-lg" src={Image} alt="product" />
                     </div>
-                    <h1 className="text-2xl font-semibold text-purple-600 mt-2">Dashboard</h1>
-                    <p className="text-gray-600 text-center px-4">This is the main content area.</p>
+                        <h1 className="text-2xl font-semibold text-purple-600 mt-2">Dashboard</h1>
+                        <p className="text-gray-600 text-center px-4">This is the main content area.</p>
+                    </Link>
                 </div>
 
                 <div className="max-w-md h-fit border border-gray-200 hover:bg-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 flex flex-col items-center p-4">

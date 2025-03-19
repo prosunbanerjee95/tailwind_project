@@ -1,5 +1,9 @@
 import React, { lazy, Suspense } from 'react'
 import { createBrowserRouter, Navigate, Outlet, RouterProvider } from 'react-router-dom';
+import MainContentArea from '../maincontentarea/MainContentArea';
+// import Optionone from '../optionone/Optionone';
+// import Project from '../project/Project';
+// import Notifications from '../notifications/Notifications';
 // import Login from '../login/Login';
 // import Home from '../home/Home';
 // import Layout from '../navbar/layout/Layout';
@@ -21,6 +25,9 @@ const Updates = lazy(() => import('../chitchat/Updates'));
 const Alerts = lazy(() => import('../alerts/Alerts'));
 const Reminders = lazy(() => import('../reminders/Reminders'));
 const Tasks = lazy(() => import('../tasks/Tasks'));
+const Notifications = lazy(() => import('../notifications/Notifications'));
+const Project = lazy(() => import('../project/Project'));
+const Optionone = lazy(() => import('../optionone/Optionone'));
 
 function Routing() {
 
@@ -46,6 +53,26 @@ function Routing() {
                 {
                     path: '',
                     element: <Home />,
+                },
+            ]
+        },
+        {
+            path: '/projects',
+            element: <AuthenticatedLayout />,
+            children: [
+                {
+                    path: '',
+                    element: <Project />,
+                },
+            ]
+        },
+        {
+            path: '/optionone',
+            element: <AuthenticatedLayout />,
+            children: [
+                {
+                    path: '',
+                    element: <Optionone />,
                 },
             ]
         },
@@ -81,7 +108,7 @@ function Routing() {
                 },
                 {
                     path: 'notifications', // Renders Notifications component when accessing /chitchat/notifications
-                    // element: <Notifications />,
+                    element: <Notifications />,
                 },
                 {
                     path: 'reminders', // Renders Notifications component when accessing /chitchat/notifications
@@ -93,6 +120,19 @@ function Routing() {
                 },
             ]
         },
+
+        {
+            path: '/maincontentarea',
+            element: <AuthenticatedLayout />,
+            children: [
+                {
+                    path: '',
+                    element: <MainContentArea />,
+                },
+            ]
+
+        }
+
     ]);
 
     return (

@@ -88,12 +88,12 @@ function Reminders() {
 
     return (
         <div>Reminders
-            <div class="flex flex-row-reverse space-x-4 space-x-reverse ...">
+            <div className="flex flex-row-reverse space-x-4 space-x-reverse ...">
                 <div>01</div>
                 <div>02</div>
                 <div>03</div>
             </div>
-            <div class="flex space-x-4 ...">
+            <div className="flex space-x-4 ...">
                 <div>01</div>
                 <div>02</div>
                 <div>03</div>
@@ -166,26 +166,26 @@ function Reminders() {
                 </div>
             )}
 
-            <div class="relative z-0">
+            <div className="relative z-0">
                 <input type="text" id="floating_standard"
-                    class="block py-2.5 px-0 w-fit text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder="placeholder" />
-                <label for="floating_standard" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">Floating standard</label>
+                    className="block py-2.5 px-0 w-fit text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder="placeholder" />
+                <label for="floating_standard" className="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">Floating standard</label>
             </div>
 
-            <div class="flex items-center">
-                <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+            <div className="flex items-center">
+                <svg className="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
                     <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
                 </svg>
-                <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                <svg className="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
                     <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
                 </svg>
-                <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                <svg className="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
                     <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
                 </svg>
-                {/* <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                {/* <svg className="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
                     <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
                 </svg> */}
-                <svg class="w-4 h-4 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="url(#halfGradient)" viewBox="0 0 22 20">
+                <svg className="w-4 h-4 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="url(#halfGradient)" viewBox="0 0 22 20">
                     <defs>
                         <linearGradient id="halfGradient">
                             <stop offset="25%" stop-color="yellow" />
@@ -195,21 +195,21 @@ function Reminders() {
                     <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
                 </svg>
 
-                <svg class="w-4 h-4 ms-1 text-gray-300 dark:text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                <svg className="w-4 h-4 ms-1 text-gray-300 dark:text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
                     <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
                 </svg>
-                <p class="ms-1 text-sm font-medium text-gray-500 dark:text-gray-400">4.95</p>
-                <p class="ms-1 text-sm font-medium text-gray-500 dark:text-gray-400">out of</p>
-                <p class="ms-1 text-sm font-medium text-gray-500 dark:text-gray-400">5</p>
+                <p className="ms-1 text-sm font-medium text-gray-500 dark:text-gray-400">4.95</p>
+                <p className="ms-1 text-sm font-medium text-gray-500 dark:text-gray-400">out of</p>
+                <p className="ms-1 text-sm font-medium text-gray-500 dark:text-gray-400">5</p>
             </div>
 
 
-            {/* <button data-popover-target="popover-default" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Default popover</button>
-            <div data-popover id="popover-default" role="tooltip" class="absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-xs opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800">
-                <div class="px-3 py-2 bg-gray-100 border-b border-gray-200 rounded-t-lg dark:border-gray-600 dark:bg-gray-700">
-                    <h3 class="font-semibold text-gray-900 dark:text-white">Popover title</h3>
+            {/* <button data-popover-target="popover-default" type="button" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Default popover</button>
+            <div data-popover id="popover-default" role="tooltip" className="absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-xs opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800">
+                <div className="px-3 py-2 bg-gray-100 border-b border-gray-200 rounded-t-lg dark:border-gray-600 dark:bg-gray-700">
+                    <h3 className="font-semibold text-gray-900 dark:text-white">Popover title</h3>
                 </div>
-                <div class="px-3 py-2">
+                <div className="px-3 py-2">
                     <p>And here's some amazing content. It's very engaging. Right?</p>
                 </div>
                 <div data-popper-arrow></div>
@@ -419,30 +419,30 @@ function Reminders() {
 
             {/* <div>
                 <article>
-                    <img class="float-left ..." src={Logo} />
-                    <img class="float-right ..." src={Image} />
-                    <p class="clear-none ...">Maybe we can live without libraries...</p>
+                    <img className="float-left ..." src={Logo} />
+                    <img className="float-right ..." src={Image} />
+                    <p className="clear-none ...">Maybe we can live without libraries...</p>
                 </article>
             </div> */}
 
-            {/* <div class="static ...">
+            {/* <div className="static ...">
                 {/* <!-- Static parent --> */}
-            {/* <div class="static ..."><p>Static child</p></div>
-                <div class="inline-block ..."><p>Static sibling</p></div> */}
+            {/* <div className="static ..."><p>Static child</p></div>
+                <div className="inline-block ..."><p>Static sibling</p></div> */}
             {/* <!-- Static parent --> */}
-            {/* <div class="absolute ..."><p>Absolute child</p></div>
-                <div class="inline-block ..."><p>Static sibling</p></div>
+            {/* <div className="absolute ..."><p>Absolute child</p></div>
+                <div className="inline-block ..."><p>Static sibling</p></div>
             </div>  */}
 
 
-            <div class="bg-gradient-to-r from-blue-500 to-purple-500 text-white p-4 text-2xl font-bold decoration-slice ">
+            <div className="bg-gradient-to-r from-blue-500 to-purple-500 text-white p-4 text-2xl font-bold decoration-slice ">
                 Tailwind CSS Box Decoration Slice
             </div>
 
 
-            {/* <div class="max-w-md mx-auto p-4 bg-gray-100 rounded-lg shadow-md h-96 flex flex-col">
+            {/* <div className="max-w-md mx-auto p-4 bg-gray-100 rounded-lg shadow-md h-96 flex flex-col">
                 <!-- Chat messages container -->
-                <div class="flex-1 space-y-3 overflow-y-auto p-2 scrollbar-thin">
+                <div className="flex-1 space-y-3 overflow-y-auto p-2 scrollbar-thin">
                     <!-- Sender Message -->
                     {messages.map((msg, index) => (
                         <div key={index} className={`flex ${msg.sender === "user" ? "justify-end" : "justify-start"}`}>
@@ -459,7 +459,7 @@ function Reminders() {
                 </div>
 
                 <!-- Input Field -->
-                <div class="flex items-center gap-2 p-2 border-t">
+                <div className="flex items-center gap-2 p-2 border-t">
                     <input
                         type="text"
                         placeholder="Type a message..."
@@ -470,10 +470,10 @@ function Reminders() {
                                 sendMessage();
                             }
                         }}
-                        className="flex-1 p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        classNameName="flex-1 p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                     />
 
-                    <button onClick={sendMessage} class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">
+                    <button onClick={sendMessage} className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">
                         Send
                     </button>
                 </div>

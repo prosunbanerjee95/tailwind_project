@@ -1,6 +1,6 @@
 import React, { Fragment, useEffect, useState } from 'react';
 import { Menu, Disclosure, MenuButton, MenuItem, Transition, DisclosureButton, DisclosurePanel, MenuItems } from '@headlessui/react'
-import { XMarkIcon } from '@heroicons/react/24/outline';
+import { EllipsisHorizontalIcon, XMarkIcon } from '@heroicons/react/24/outline';
 import { Bars3Icon, BellIcon, MoonIcon, SunIcon } from "@heroicons/react/24/outline";
 import Logo from '../../assets/logo.png';
 import { Link, useNavigate } from 'react-router-dom';
@@ -23,8 +23,9 @@ import {
 } from '@heroicons/react/16/solid'
 import { Button } from '../Button';
 import Tailwindcsslogo from '../../assets/tailwindlogo.jpg';
-import { LogOut } from 'lucide-react';
+import { Ellipsis, EllipsisVertical, LogOut } from 'lucide-react';
 import Chatbox from '../chatbox/Chatbox';
+import { BsThreeDotsVertical } from "react-icons/bs";
 
 
 
@@ -49,7 +50,7 @@ function NavbarComponent({ isOpen, sidebarOpen, setSidebarOpen, toggleSidebar, t
         { name: 'Calendar', href: '#', current: false },
     ];
 
-       // Function to handle sending a message
+    // Function to handle sending a message
     const sendMessage = () => {
         if (newMessage.trim() === "") return; // Prevent empty messages
 
@@ -65,12 +66,16 @@ function NavbarComponent({ isOpen, sidebarOpen, setSidebarOpen, toggleSidebar, t
         setOpenChatbox(true);
     };
 
+    const handelOptionOne = () => {
+        navigate('/optionone');
+    };
+
 
 
 
     return (
-        <div>
-            <Disclosure as="nav" className="w-full bg-gray-800">
+        <div className=''>
+            <Disclosure as="nav" className="w-screen bg-gray-800 ">
                 {({ open }) => (
                     <>
                         <div className="px-4 sm:px-6 lg:px-8">
@@ -92,13 +97,50 @@ function NavbarComponent({ isOpen, sidebarOpen, setSidebarOpen, toggleSidebar, t
                                             <Link to="/home" className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">
                                                 <span className="ms-3">Home</span>
                                             </Link>
-                                            <Link to="" className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">
+                                            <Link to="/projects" className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">
                                                 Projects
                                             </Link>
+                                            {/* <Link to="/projects" className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">
+                                                Projects
+                                            </Link> */}
+                                        </div>
+                                    </div>
+
+                                    {/* Dropdown Menu */}
+                                    <div className="relative group ml-2.5 mt-2">
+                                        {/* Button to trigger menu */}
+                                        <button className="text-gray-400 hover:text-white hover:bg-gray-700 rounded-md px-3 text-sm font-medium">
+                                            {/* <EllipsisHorizontalIcon className="w-6 h-6 animate-pulse" /> */}
+                                            EllipsisHorizontalIcon
+                                        </button>
+
+                                        {/* Dropdown Content */}
+                                        <div className="absolute top-full left-0 mt-2 w-40 bg-gray-800 text-white rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity">
+                                            <ul className="py-2">
+                                                <li onClick={handelOptionOne} className="px-4 py-2 hover:bg-gray-700 cursor-pointer">Option 1</li>
+                                                <li className="px-4 py-2 hover:bg-gray-700 cursor-pointer">Option 2</li>
+                                                <li className="px-4 py-2 hover:bg-gray-700 cursor-pointer">Option 3</li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
+
                                 <div className="absolute inset-y-0 right-0 flex items-center pr-2">
+                                    {/* Dots Menu */}
+                                    {/* <div className="relative group">
+                                        <button className="text-gray-400 hover:text-white">
+                                            <EllipsisVertical className="w-6 h-6 animate-pulse" />
+                                        </button>
+                                        <div className="absolute top-full left-0 mt-2 w-40 bg-gray-800 text-white rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity">
+                                            <ul className="py-2">
+                                                <li onClick={handelOptionOne} className="px-4 py-2 hover:bg-gray-700 cursor-pointer">Option 1</li>
+                                                <li className="px-4 py-2 hover:bg-gray-700 cursor-pointer">Option 2</li>
+                                                <li className="px-4 py-2 hover:bg-gray-700 cursor-pointer">Option 3</li>
+                                            </ul>
+                                        </div>
+                                    </div> */}
+
+                                    {/* Bell Icon */}
                                     <div className="relative group">
                                         <button className="text-gray-400 hover:text-white">
                                             <BellIcon onClick={handelChatbox} className="w-6 h-6 animate-pulse" />
@@ -125,7 +167,7 @@ function NavbarComponent({ isOpen, sidebarOpen, setSidebarOpen, toggleSidebar, t
                                                 leaveFrom="transform opacity-100 scale-100"
                                                 leaveTo="transform opacity-0 scale-95"
                                             >
-                                                <MenuItems className="absolute right-0 z-10 mt-2 w-48 rounded-md bg-white py-1 shadow-lg ring-1 ring-black/5">
+                                                <MenuItems className="absolute right-0 z-10 mt-2 w-48 rounded-md bg-amber-500 py-1 shadow-lg ring-1 ring-black/5">
                                                     {/* <MenuItem>
                                                 {({ active: _active  }) => (
                                                     <Link

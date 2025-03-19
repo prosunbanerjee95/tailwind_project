@@ -5,7 +5,7 @@ import Layout from '../navbar/layout/Layout';
 import { useNavigate } from 'react-router-dom';
 // import { ThemeContext } from "./ThemeContext";
 // import { Bars3Icon, BellIcon, MoonIcon, SunIcon, XMarkIcon } from "@heroicons/react/24/outline";
-import { ThemeContext, ThemeProvider } from '../../ThemeContext';
+// import { ThemeContext, ThemeProvider } from '../../ThemeContext';
 import Background from '../../assets/background.jpg';
 import Logo from '../../assets/tailwindlogo.jpg';
 // import { EyeIcon, EyeOffIcon } from '@heroicons/react/20/solid';
